@@ -63,31 +63,3 @@ func (data *Data) DeleteConfig(id int) error {
 	_, err := data.DB.Exec("DELETE FROM config WHERE id = ?", id)
 	return err
 }
-
-type Essay struct {
-	ID              int
-	Topic           string
-	Content         string
-	DifficultyLevel string
-	CreatedAt       string
-}
-
-type Question struct {
-	ID              int
-	QuestionType    string
-	QuestionText    string
-	OptionA         string
-	OptionB         string
-	OptionC         string
-	OptionD         string
-	CorrectOption   string
-	DifficultyLevel string
-	CreatedAt       string
-}
-
-type Image struct {
-	ID        int
-	ImageName string
-	ImageData []byte // For BLOB data
-	CreatedAt string
-}
