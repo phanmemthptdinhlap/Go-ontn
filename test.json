@@ -1,0 +1,71 @@
+{
+    "Role":"Bạn là một chuyện gia sư phạm giàu kinh nghiệm, bạn giảng dạy môn tin học và có nhiều kinh nghiệm về ra đề theo định hướng đề 2025 và chương trình giáo dục phổ thông 2018",
+    "Task":{
+        "Type":"Tạo đề thi",
+        "Subject":"Tin học",
+        "Grade":"Lớp 11",
+        "Exam Period":"Học kì 1",
+        "Questions":{
+            "Multiple Choice":[
+                {
+                    "Group":"Group1",
+                    "Number of Questions":5,
+                    "Difficulty":"Nhận biết",
+                    "content":"Khái niệm cơ bản về trí tuệ nhân tạo, các khả năng của trí tuệ nhân tạo."  
+                },
+                {
+                    "Group":"Group2",
+                    "Number of Questions":5,
+                    "Difficulty":"Thông hiểu",
+                    "content":"Các ứng dụng của trí tuệ nhân tạo trong cuộc sống hàng ngày và trong các ngành công nghiệp khác nhau."
+                },
+                {
+                    "Group":"Group3",
+                    "Number of Questions":5,
+                    "Difficulty":"Vận dụng",
+                    "content":"Các thuật toán và kỹ thuật cơ bản được sử dụng trong trí tuệ nhân tạo, như học máy, mạng nơ-ron nhân tạo, và xử lý ngôn ngữ tự nhiên."
+                },
+                {
+                    "Group":"Group4",
+                    "Number of Questions":5,
+                    "Difficulty":"Nhận biết",
+                    "content":"Các thách thức đạo đức và xã hội liên quan đến việc phát triển và triển khai trí tuệ nhân tạo, bao gồm quyền riêng tư, an ninh, và tác động đến việc làm."
+                },
+                {
+                    "Group":"Group5",
+                    "Number of Questions":4,
+                    "Difficulty":"Thông hiểu",
+                    "content":"Các xu hướng tương lai trong nghiên cứu và phát triển trí tuệ nhân tạo, bao gồm trí tuệ nhân tạo tổng quát và các hệ thống tự học tiên tiến."
+                }
+            ],
+            "True/False":[
+                {
+                    "Question":"Question1",
+                    "Difficulty":"Nhận biết, Nhận biết, Thông hiểu, Vận dụng",
+                    "content":"Khái niệm cơ bản về trí tuệ nhân tạo, các khả năng của trí tuệ nhân tạo."  
+                },
+                {
+                    "Question":"Question2",
+                    "Difficulty":"Nhận biết, Thông hiểu,Thông hiểu, Vận dụng",
+                    "content":"Các ứng dụng của trí tuệ nhân tạo trong cuộc sống hàng ngày và trong các ngành công nghiệp khác nhau."
+                },
+                {    
+                    "Question":"Question3",
+                    "Difficulty":"Nhận biết, Nhận biết,Thông hiểu, Vận dụng",
+                    "content":"Các thuật toán và kỹ thuật cơ bản được sử dụng trong trí tuệ nhân tạo, như học máy, mạng nơ-ron nhân tạo, và xử lý ngôn ngữ tự nhiên."
+                },
+                {
+                    "Question":"Question4",
+                    "Difficulty":"Nhận biết, Thông hiểu,Vận dụng, Vận dụng",
+                    "content":"Các thách thức đạo đức và xã hội liên quan đến việc phát triển và triển khai trí tuệ nhân tạo, bao gồm quyền riêng tư, an ninh, và tác động đến việc làm."
+                }
+            ]
+        }
+    },
+    "Language":"Tiếng Việt",
+    "Constraints":"Đề thi phải phù hợp với trình độ của học sinh lớp 11, đảm bảo tính công bằng và khách quan trong đánh giá. Câu hỏi phải rõ ràng, không gây hiểu nhầm. Thời gian làm bài thi là 45 phút, tổng điểm tối đa là 10 điểm, Các câu hỏi trắc nghiệm chiếm 60% tổng số điểm, câu hỏi đúng/sai chiếm 40% tổng số điểm.",
+    "Output":{
+        "type":"JSON",
+        "structure":" { 'Exam': { 'Subject': '', 'Grade': '', 'Exam Period': '', 'Questions': { 'Multiple Choice': [ { 'Question': '', 'Difficulty': '', 'Options': [ '', '', '', '' ], 'Answer': 'A/B/C/D' } ], 'True/False': [ { 'Question': {'content': '', 'Difficulty': ['a':'','b':'','c':'','d':''}], 'Options': [ '', '', '', '' ], 'Answer': 'Đ/S Đ/S Đ/S Đ/S''} } ] } } } "
+    }
+}
