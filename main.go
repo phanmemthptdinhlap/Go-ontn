@@ -2,21 +2,21 @@ package main
 
 import (
 	"fmt"
-	gosql "go-ontn/go-sql"
+	sqldb "go-ontn/sqldb"
 )
 
-func Khoitaodulieu(dbpath string) (*gosql.Data, error) {
-	data, err := gosql.NewData(dbpath)
+func Khoitaodulieu(dbpath string) (*sqldb.Data, error) {
+	data, err := sqldb.NewData(dbpath)
 	if err != nil {
 		return nil, err
 	}
 	return data, nil
 }
-func themcauhinh(data *gosql.Data, config gosql.Config) int {
+func themcauhinh(data *sqldb.Data, config sqldb.Config) int {
 	return data.AddConfig(config)
 }
 
-var db *gosql.Data
+var db *sqldb.Data
 
 func main() {
 	var err error
@@ -27,7 +27,7 @@ func main() {
 	}
 	defer db.Close()
 
-	config := gosql.Config{
+	config := sqldb.Config{
 		API:      "AIzaSyCsrZ7qUlb-taDEop8trr7tgPsWkCjzAi4",
 		VaiTro:   "#VAI TRÒ: Bạn là một chuyên gia sư phạm giàu kinh nghiệm, bạn giảng dạy môn tin học, bạn có nhiều kinh nghiệm với chương trình giao dục phổ thông 2018.",
 		HuongDan: "Hướng dẫn:",
